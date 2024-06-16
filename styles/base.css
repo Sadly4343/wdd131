@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+  }
+  
+header {
+    background: lightpink;
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+  
+.left-sidebar {
+    background: lightblue;
+    grid-column: 1 / 2;
+  }
+.profile {
+    float:right;
+}
 
-nav {
-    background-color: grey;
-    margin: 0 auto;
-    max-width: 800px;
-}
-nav ul {
-    list-style-type: none;
-}
-nav a {
-    display: block;
-    color: #fff;
+  
+  
+.right-sidebar {
+    background: yellow;
+    grid-column: 2 / 4;
+  }
+  
+footer {
+    background: wheat;
+    padding: 2rem;
     text-align: center;
+    grid-column: 1 / 4;
+  }
+  
+.left-sidebar,
+.right-sidebar {
     padding: 1rem;
-    text-decoration: none;
-}
-nav ul {
-    display:flex;
-
-
-
-
-}
-nav a:hover {
-    border: 1px solid #fff
-}
+  }
+  
