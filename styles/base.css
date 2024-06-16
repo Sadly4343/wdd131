@@ -10,11 +10,11 @@ header {
 .left-sidebar {
     background: lightblue;
     grid-column: 1 / 3;
-    grid-row:auto
+    grid-row:auto;
   }
 
 .wrapper {
-    display: grid;
+    display:grid;
     height: 100vh;
     gap: 10px;
     grid-template: auto 1fr auto / auto 1fr auto;
@@ -22,21 +22,29 @@ header {
     margin: 0 auto;
 }
 .about img {
-    float:right;
+    float: right;
 }
 .state img {
-    float: right;
+    float: left;
 }
 .card {
     padding: 10px;
     
 }
-main {
-
-    justify-content: center;
+.about {
+    height: 400px;
+    padding: 100px;
+    width: 1000px;
 }
-  
-  
+.state {
+    height: 400px;
+    padding: 100px;
+    width:1000px;
+}
+main {
+    max-width:fit-content;
+
+}
 .right-sidebar {
     background: yellow;
     grid-column: 3 / 4;
