@@ -29,3 +29,65 @@ nav a:hover {
 .active {
     color: green;
 }
+#menu {
+    display: block;
+    font-size:small;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: aqua;
+    color: black;
+}
+#menu::before {
+    content: "X"
+}
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.navigation a:hover, navigation a:active {
+    color: white;
+    background-color: black;
+}
+.show li {
+    display:block;
+}
+#menu.show::before {
+    content: "L";
+}
+.container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1000px;
+}
+.item {
+    text-align: center;
+}
+@media screen and (min-width: 680px){ h1 {color:red}
+    .navigation {
+        display:flex;
+    }
+    .navigation li {
+        display:block;
+        flex: 1 1 100%;
+
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display:none;
+    }
+  }
