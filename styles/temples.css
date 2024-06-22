@@ -4,7 +4,8 @@ header {background-color:greenyellow;
 text-align: center;
 display: flex;
 height: auto; max-width: 100%;}
-body {max-width: fit-content; margin: 0px;}
+body {font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: fit-content; margin: 0px;}
 
 nav {
     background-color:yellow;
@@ -14,14 +15,12 @@ nav {
     text-align: right;
     margin-right: 0px;
 
-    vertical-align: middle;
 
 
 }
 nav ul {
     list-style-type: none;
     justify-content: space-around;
-    vertical-align: middle;
     padding-top: 15px;;
   
 }
@@ -39,6 +38,10 @@ nav a:hover {
 }
 .active {
     color: green;
+}
+footer {
+    text-align: center;
+    background-color: greenyellow;
 }
 #menu {
     display: block;
