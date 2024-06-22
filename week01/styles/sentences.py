@@ -1,16 +1,12 @@
 import random
+#5. Exceeded requirements added the get_adverb function so the sentence now has adverbs within the sentence for the 
+#program. It adds additional context to the sentence and makes it have more to read for the user. 
 wordss = ["past", "present", "future"]
-quantity = random.randint(0, 1)
-tense = random.choice(wordss)
 
 def main():
-    make_sentence()
-    make_sentence()
-    make_sentence()
-    make_sentence()
-    make_sentence()
-    make_sentence()
-
+    for i in [1,2]:
+        for x in wordss:
+            make_sentence(i,x)
 
 def get_determiner(quantity):
 
@@ -22,22 +18,36 @@ def get_determiner(quantity):
     word = random.choice(words)
     
     return word
+
 def get_noun(quantity):
 
     if quantity == 1:
-        words = ["Time", "Year", "Person", "Wife", "Life", "Tomato", "Cactus", "People"]
+        words = ["bird", "computer", "car", "cat", "tree",
+        "dog", "book", "man", "rabbit", "woman"]
     else:
-        words = ["Times", "Years", "People", "Wives", "Lives", "Potatoes", "Tomatoes", "Cacti"]
+        words = ["birds", "computers", "cars", "cats", "trees",
+        "dogs", "books", "men", "rabbits", "women"]
     # Randomly choose and return a determiner.
     word = random.choice(words)
     return word
+
 def get_verb(quantity, tense):
-    if (quantity == 1 and tense == "present"):
-        words = ["walking", "running", "sprinting"]
-    if (quantity == 1 and tense == "future"):
-        words = ["will walk", "will run", "will sprint"]
-    else:
-        words = ["has walked", "has run", "has sprinted"]
+
+    # words for past tense
+    if (tense == "past"):
+        words = ["drank", "ate", "grew", "laughed", "thought","ran", "slept", "talked", "walked", "wrote"]
+
+   # words for present tense
+    if (tense == "present"):
+        if (quantity==1):
+            words = ["drinks", "eats", "grows", "laughs", "thinks","runs", "sleeps", "talks", "walks", "writes"]
+        else:
+            words = ["drink", "eat", "grow", "laugh", "think","run", "sleep", "talk", "walk", "write"]
+
+   # words for future tense
+    if (tense == "future"):
+        words = ["will drink", "will eat", "will grow", "will laugh","will think", "will run", "will sleep", "will talk","will walk", "will write"]
+
     # Randomly choose and return a determiner.
     word = random.choice(words)
     
@@ -52,23 +62,30 @@ def get_preposition():
     "past", "to", "under", "with", "without"]
     word = random.choice(words)
     return word
+def get_adverb():
+    words = ["early", "late", "soon", "fast", "rapidly", "gradually"]
+    word = random.choice(words)
+    return word
+
 
 def get_prepositional_phrase(quantity):
-    if quantity == 1:
-        total = (f"{get_preposition} {get_verb} {get_noun}")
-    else:
+    noun = get_noun(quantity)
+    deter = get_determiner(quantity).capitalize()
+    prep = get_preposition()
+
+    phrase = f"{deter} {noun} {prep}"
+    return phrase
 
 
-
-
-def make_sentence():
-    ocean = get_noun(quantity)
-    water = get_determiner(quantity)
-    waters = water.capitalize()
-    tea = get_verb(quantity, tense)
-    full_sent = f"{waters} {ocean} {tea}."
+def make_sentence(quantity, tense):
+    noun = get_noun(quantity)
+    determiner = get_determiner(quantity)
+    verb = get_verb(quantity, tense)
+    phrase = get_prepositional_phrase(quantity)
+    adverb = get_adverb()
+    full_sent = f"{phrase} {determiner} {noun} {adverb} {verb}."
     print(full_sent)
-    return full_sent
+    #return full_sent
 
 main()
 
