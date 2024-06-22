@@ -4,17 +4,25 @@ header {background-color:greenyellow;
 text-align: center;
 display: flex;
 height: auto; max-width: 100%;}
-body {max-width: fit-content;}
+body {max-width: fit-content; margin: 0px;}
 
 nav {
     background-color:yellow;
     margin: 0 auto;
     max-width:1000px;
+    position: relative;
+    text-align: right;
+    margin-right: 0px;
+
+    vertical-align: middle;
+
 
 }
 nav ul {
     list-style-type: none;
     justify-content: space-around;
+    vertical-align: middle;
+    padding-top: 15px;;
   
 }
 figure
@@ -42,12 +50,13 @@ nav a:hover {
     color: black;
 }
 #menu::before {
-    content: "X"
+    content: "☰"
 }
 .navigation {
     list-style: none;
     margin: 0 auto;
     max-width: 760px;
+    
 }
 .navigation li {
     display: none;
@@ -68,7 +77,7 @@ nav a:hover {
     display:block;
 }
 #menu.show::before {
-    content: "L";
+    content: "X";
 }
 .container {
     display: inline-grid;
@@ -85,12 +94,18 @@ img {
     height:auto;
 }
 main {
- max-width: 100%
+ max-width: 2000px;
+ 
+}
+h2 {
+    text-align: center;
 }
 @media screen and (max-width: 600px){ h1 {color:black;}
 
     
-    
+    h1 {
+        padding-top: 30px;
+    }
     .container 
     {display: inline-block;
         grid-template-columns: 1fr;
@@ -100,9 +115,14 @@ main {
         margin: 0;
         height: auto;
     }
-    .img {width:auto;max-width: 100%; height:auto;}
+    header {
+        vertical-align: middle;
+        text-align: center;
+    }
+    nav {margin-left: 0px;}
+    .img {width:auto; height:auto;}
   
     .navigation a {font-size: .5rem;}
 
-  .item {margin:0;}
+  .item {margin-right:5px; margin-left: 0px;}
 }
