@@ -98,7 +98,7 @@ main {
         margin: 0;
         height: auto;
     }
-    .img {width:auto;max-width: 100; height:auto;}
+    .img {width:auto;max-width: 100%; height:auto;}
   
     .navigation a {font-size: .5rem;}
 
