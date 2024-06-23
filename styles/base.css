@@ -4,15 +4,25 @@
 
 header {
     background: lightpink;
-    padding: 2rem;
+    
+
   }
   
+h1 {
+    text-align: center;
+}
 .left-sidebar {
     background: lightblue;
     grid-column: 1 / 3;
     grid-row:auto;
   }
-
+h2 {
+    text-align: center;
+    background-color: red;
+    margin: 0px;
+    height: 50px;
+    font-size: 2rem;
+}
 .wrapper {
     display:grid;
     height: 100vh;
@@ -23,31 +33,76 @@ header {
 }
 .about img {
     float: right;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-right: 100px;
 }
 .state img {
     float: left;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 100px;
+
 }
-.card {
-    padding: 10px;
+figcaption { padding-left: 200px;
+    padding-bottom: 10px;
     
 }
-.about {
-    height: 400px;
-    padding: 100px;
-    width: 1000px;
+.state h2 {background-color:lightblue; border-bottom: 1px solid black; border-width: 5px;}
+.card a {
+    padding: 10px;
+    list-style-type: circle;
+    display: list-item;
+    padding-left: 10px;
+    list-style-position: inside;
+    border:black;
+    font-size: 2rem;
+
+    
+    
 }
+
+section {
+    border-style: solid;
+    height: 885px;
+
+}
+
+.about {
+    height: auto;
+    width: 100%;
+}
+.about p {
+    height: 370px;
+    width: auto;
+    font-size: 2rem;
+    padding-top: 100px;
+    padding-left: 100px;;
+}
+
 .state {
-    height: 400px;
-    padding: 100px;
-    width:1000px;
+    height: auto;
+    width: 100%;
+}
+.state p {
+    height: 310px;
+    width:100%;
+    font-size: 2.0rem;
+    padding-left: 100px;
 }
 main {
-    max-width:fit-content;
+    max-width:100%;
 
 }
 .right-sidebar {
     background: yellow;
     grid-column: 3 / 4;
+    width:400px;
+  }
+.right-sidebar p  {
+    padding-top: 300px;
   }
   
 footer {
@@ -55,17 +110,19 @@ footer {
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
+
   }
   
 .left-sidebar,
 .right-sidebar {
     padding: 1rem;
   }
+
   
 nav {
     background-color:yellow;
     margin: 0 auto;
-    max-width:1000px;
+    max-width:100%;
 }
 nav ul {
     list-style-type: none;
@@ -88,7 +145,8 @@ nav ul {
 
 }
 nav a:hover {
-    border: 1px solid #fff
+    border: 1px solid #fff;
+    background-color: red;
 }
 .active {
     color: green;
