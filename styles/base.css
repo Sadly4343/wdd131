@@ -100,7 +100,7 @@ main {
 .right-sidebar {
     background: yellow;
     grid-column: 3 / 4;
-    width:400px;
+    width:auto;
   }
 .right-sidebar p  {
     padding-top: 300px;
