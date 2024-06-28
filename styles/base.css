@@ -20,17 +20,23 @@ h2 {
 }
 .about img {
     float: right;
-    max-width: 100%;
+    width: 100%;
+    max-width: fit-content;
     height: auto;
     object-fit: contain;
-    padding-right: 100px;
+
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height:auto;
 }
 .state img {
     float: left;
     max-width: 100%;
     height: auto;
-    object-fit: contain;
-    padding-left: 100px;
+
+
 
 }
 figcaption { padding-left: 100px;
@@ -45,21 +51,23 @@ figcaption { padding-left: 100px;
     display: list-item;
     padding-left: 10px;
     list-style-position: inside;
-    border:black;
+
     font-size: 2rem;
     background: lightblue;
     grid-column: 1 / 3;
     grid-row:auto;
+    
 
     
     
 }
 
 section {
-    border-style: solid;
+  
     height: auto;
     padding: 20px;
-    width: 100%
+    width: 100%;
+    border-style: solid;
 
 }
 
@@ -89,7 +97,7 @@ section {
 
 }
 main {
-    max-width:100%;
+    max-width:auto;
     display:grid;
 
     gap: 10px;
@@ -101,12 +109,21 @@ main {
 .right-sidebar {
     background: yellow;
     grid-column: 3 / 4;
-    width:100%;
-    border: black;
-    height: auto;
+
+   
+    width:fit-content;
+    display: flex;
+    justify-content: space-between;
+    
+
+
   }
 .right-sidebar p  {
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 100px;
+
+
     
   }
 figure {
