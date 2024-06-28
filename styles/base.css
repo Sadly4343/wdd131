@@ -63,10 +63,12 @@ section {
 .about {
     height: auto;
     width: 100%;
+    display: flex;
+    padding: 5px;
 }
 .about p {
-    height: 370px;
-    width: auto;
+    height: auto;
+    width: 100%;
     font-size: 2rem;
     padding-top: 100px;
     padding-left: 100px;;
@@ -75,12 +77,13 @@ section {
 .state {
     height: auto;
     width: 100%;
+    display: flex;
 }
 .state p {
-    height: 310px;
+    height: auto;
     width:100%;
     font-size: 2.0rem;
-    padding-left: 100px;
+
 }
 main {
     max-width:100%;
@@ -88,7 +91,6 @@ main {
 
     gap: 10px;
     grid-template: auto 1fr auto / auto 1fr auto;
-    max-width: 2000px;
 
     margin: 0 auto;
 
@@ -101,6 +103,9 @@ main {
 .right-sidebar p  {
     padding-top: 300px;
   }
+figure {
+    margin: 0px;
+}
   
 footer {
     background: wheat;
