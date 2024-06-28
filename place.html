@@ -9,6 +9,7 @@
     <meta name="author" content="Logan Hartshorn">
     <script src="scripts/place.js" defer></script>
     <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,13 +18,14 @@
 <body>
     <header><h1>Costa Rica</h1></header>
     <main>
+    <div class="wrapper">
         <div class="hero">
             <picture>
               <source srcset="images/costa_rica.webp" media="(min-width: 1000px)">
               <img src="images/costa_rica_small.webp" alt="Temple name and location" width="500" height="250">
             </picture>
           </div>
-        <section class="card">
+        <section class="card_1">
             <h2>Data</h2>
             <p>
             <strong>Area:</strong> 587,041 sq km <br>
@@ -43,9 +45,12 @@
             <strong>Internet TLD:</strong> .mg <br>
             </p>
         </section>
-        <section class="card">
-            <h3>Weather</h3>
+        <section class="card_2">
+            <div class="title_sun">
+            <h3 class="title">Weather   <img src="images\sunrise.svg" alt="sunrise image"> </h3>
+            <p class="sun">⛅</p>
             <p>
+            </div>
             <strong>Temperature:</strong> 10 C <br>
             <br>
             <strong>Conditions:</strong> Partly Cloudy <br>
@@ -55,6 +60,7 @@
             <strong>Wind Chill:</strong> 9.8 C 
             </p>
         </section>
+    </div>
 
 
 
