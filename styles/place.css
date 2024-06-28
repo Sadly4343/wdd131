@@ -29,8 +29,7 @@ footer {margin: 0px;
 footer p {margin: 0px;}
 section {text-align: center;}
 footer p {margin: 0px;}
-h3::after {content: "⛅";}
-
+h3::after {content:"🌫️";}
 @media screen and (max-width: 501px) {header {background-color: red;padding: 5px; font-size: 1.2rem;}main {display: inline-block;
     grid-template-columns: 1fr;
     padding: 0;

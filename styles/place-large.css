@@ -3,7 +3,7 @@
         position: relative;
     }
     section {background-color: red;}
-    section.card_1 {position:absolute; right: 5px; bottom:0px; height:auto; font-size: auto;
+    section.card_1 {position:absolute; right: 5px; bottom:0px; height:auto;
     }
     .card_2 {position:absolute; left:0px; top:0px;height:auto;} .title img {display: none;} h3::after {content: ⛅}}
     
