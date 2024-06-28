@@ -7,5 +7,9 @@ header {
     border-bottom: solid;
     border-width: 40px;
     border-color: blueviolet;
+}
+.hero img {
+width: 100%;
+height: auto;
 
 }
