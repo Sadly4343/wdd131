@@ -33,11 +33,12 @@ h2 {
     padding-left: 100px;
 
 }
-figcaption { padding-left: 200px;
+figcaption { padding-left: 100px;
     padding-bottom: 10px;
+    font-size: 1.25rem;
     
 }
-.state h2 {background-color:lightblue; border-bottom: 1px solid black; border-width: 5px;}
+.states {background-color:lightblue; border-bottom: 1px solid black; border-width: 5px;}
 .card a {
     padding: 10px;
     list-style-type: circle;
@@ -56,7 +57,9 @@ figcaption { padding-left: 200px;
 
 section {
     border-style: solid;
-    height: 885px;
+    height: auto;
+    padding: 20px;
+    width: 100%
 
 }
 
@@ -98,10 +101,13 @@ main {
 .right-sidebar {
     background: yellow;
     grid-column: 3 / 4;
-    width:auto;
+    width:100%;
+    border: black;
+    height: auto;
   }
 .right-sidebar p  {
-    padding-top: 300px;
+    justify-content: space-around;
+    
   }
 figure {
     margin: 0px;
