@@ -1,0 +1,11 @@
+header {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 2rem;
+    border-bottom: solid;
+    border-width: 40px;
+    border-color: blueviolet;
+
+}
