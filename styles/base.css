@@ -11,26 +11,12 @@ header {
 h1 {
     text-align: center;
 }
-.left-sidebar {
-    background: lightblue;
-    grid-column: 1 / 3;
-    grid-row:auto;
-  }
 h2 {
     text-align: center;
     background-color: red;
     margin: 0px;
     height: 50px;
     font-size: 2rem;
-}
-.wrapper {
-    display:grid;
-
-    gap: 10px;
-    grid-template: auto 1fr auto / auto 1fr auto;
-    max-width: 2000px;
-
-    margin: 0 auto;
 }
 .about img {
     float: right;
@@ -60,6 +46,9 @@ figcaption { padding-left: 200px;
     list-style-position: inside;
     border:black;
     font-size: 2rem;
+    background: lightblue;
+    grid-column: 1 / 3;
+    grid-row:auto;
 
     
     
@@ -95,6 +84,13 @@ section {
 }
 main {
     max-width:100%;
+    display:grid;
+
+    gap: 10px;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    max-width: 2000px;
+
+    margin: 0 auto;
 
 }
 .right-sidebar {
@@ -114,10 +110,6 @@ footer {
 
   }
   
-.left-sidebar,
-.right-sidebar {
-    padding: 1rem;
-  }
 
   
 nav {
