@@ -13,3 +13,18 @@ width: 100%;
 height: auto;
 
 }
+body {
+    margin: 0px;
+}
+footer {margin: 0px;
+    text-align: center;
+    background-color: greenyellow;
+}
+footer p {margin: 0px;}
+section {text-align: center;}
+@media screen and (max-width: 601px) {header {background-color: red;padding: 5px; font-size: 1.2rem;}main {display: inline-block;
+    grid-template-columns: 1fr;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    height: auto} .card {border-bottom: 1px solid grey;}}
