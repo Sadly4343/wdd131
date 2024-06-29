@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
   }
+body {height: auto;
+    max-width: 100%;
+    width: 100%
+
+}
 
 header {
     background: lightpink;
