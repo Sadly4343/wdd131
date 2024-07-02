@@ -107,7 +107,7 @@ const temples = [
         card.appendChild(dedicated);
         let area = document.createTextNode(res.area);
         card.appendChild(area);
-        const imageUrl = new Image(100, 200);
+        const imageUrl = new Image;
         imageUrl.src = imageUrl;
         card.appendChild(imageUrl);
 
