@@ -93,9 +93,23 @@ const temples = [
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/1200x1920/3-6e1fb66e74b4d3aedacebe3388757fc92d019668.jpeg"}
     
       ]
-    let i = 0;
 
-    while (i < temples.length) {
-        console.log(temples[i]);
-        i++;
-    }
+      temples.forEach(res => {
+        let card = document.createElement("div");
+
+        let templeName = document.createTextNode( res.templeName);
+        card.appendChild(templeName);
+
+        let location = document.createTextNode(res.location);
+        card.appendChild(location);
+
+        let dedicated = document.createTextNode(res.dedicated);
+        card.appendChild(dedicated);
+        let area = document.createTextNode(res.area);
+        card.appendChild(area);
+        let img src = 
+      
+        let container = document.querySelector("#container");
+        container.appendChild(card);
+    });
+
