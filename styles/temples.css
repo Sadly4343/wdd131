@@ -82,7 +82,7 @@ footer {
 #menu.show::before {
     content: "X";
 }
-.container {
+#container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
     max-width: 100%;

@@ -96,27 +96,39 @@ const temples = [
 
       temples.forEach(res => {
         let card = document.createElement("div");
+        let para = document.createElement("p")
+        
+        let header = document.createElement("H1")
+        let temple = document.createTextNode(res.templeName);
+        header.appendChild(temple);
+        card.appendChild(header);
 
-        let templeName = document.createTextNode( res.templeName);
-        card.appendChild(templeName);
-
+       
         let location = document.createTextNode(res.location);
-        card.appendChild(location);
+        card.appendChild(para);
+        para.appendChild(location);
 
         let dedicated = document.createTextNode(res.dedicated);
         card.appendChild(dedicated);
+        para.appendChild(dedicated);
+       
 
         let area = document.createTextNode(res.area);
         card.appendChild(area);
+        para.appendChild(area);
         
         let image = document.createElement("img");
         //image.sizes="300px, 100px";
-        image.style.height="300px";
-        image.style.width="100px"
+        image.setAttribute("height","100%");
+        image.setAttribute("width","100%");
+        image.setAttribute("loading","lazy");
         image.src = res.imageUrl;
         card.appendChild(image);
+
       
         let container = document.querySelector("#container");
         container.appendChild(card);
+        
+        container.setAttribute("display", "flex");
     });
 
