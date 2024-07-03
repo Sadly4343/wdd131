@@ -96,29 +96,44 @@ const temples = [
 
       temples.forEach(res => {
         let card = document.createElement("div");
-        let para = document.createElement("p")
+        let para1 = document.createElement("div");
+        let para2 = document.createElement("div");
+        let para3 = document.createElement("div");
+        
         
         let header = document.createElement("H1")
         let temple = document.createTextNode(res.templeName);
         header.appendChild(temple);
         card.appendChild(header);
 
-       
+        card.style.textAlign="center";
+        
+        let locationTitle = document.createElement("span");
+        locationTitle.innerText="Location: ";
+        locationTitle.style.color="blue";
         let location = document.createTextNode(res.location);
-        card.appendChild(para);
-        para.appendChild(location);
+
+        //card.appendChild(para);
+        para1.appendChild(locationTitle);
+        para1.insertBefore(location, locationTitle);
+      
+        para1.appendChild(location);
+        para1.style.color="black";
+        //para1.insertAdjacentHTML("beforebegin","<div>location");
+        card.appendChild(para1);
 
         let dedicated = document.createTextNode(res.dedicated);
-        card.appendChild(dedicated);
-        para.appendChild(dedicated);
+        para2.appendChild(dedicated).splitText;
+        para2.insertAdjacentHTML("afterbegin","<span style='color: blue'>Dedicated: </span>")
+        card.appendChild(para2);
        
 
         let area = document.createTextNode(res.area);
-        card.appendChild(area);
-        para.appendChild(area);
+        para3.appendChild(area);
+        para3.insertAdjacentHTML("afterbegin","<span style='color: blue'>Size: </span>")
+        card.appendChild(para3);
         
         let image = document.createElement("img");
-        //image.sizes="300px, 100px";
         image.setAttribute("height","100%");
         image.setAttribute("width","100%");
         image.setAttribute("loading","lazy");
