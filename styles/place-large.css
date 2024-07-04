@@ -8,4 +8,4 @@
     section.card_1 {position:absolute; right: 5px; bottom:0px; height:auto;
     }
     .card_2 {position:absolute; left:25px; top:20px;height:auto;} .title img {display: none;} footer {height:auto; align-items: center;padding-bottom: 25px; padding-bottom: 25px;} h2,h3 {position: relative; right:20px; margin-top: 5px;} 
-h3::after {content: '☁️';}}
+h3::after {content: '⛅';}}
