@@ -99,7 +99,7 @@ const temples = [
         let para1 = document.createElement("div");
         let para2 = document.createElement("div");
         let para3 = document.createElement("div");
-        
+    
         
         let header = document.createElement("H1")
         let temple = document.createTextNode(res.templeName);
@@ -134,16 +134,15 @@ const temples = [
         card.appendChild(para3);
         
         let image = document.createElement("img");
-        image.setAttribute("height","100%");
-        image.setAttribute("width","100%");
+    
         image.setAttribute("loading","lazy");
         image.src = res.imageUrl;
         card.appendChild(image);
-
+        card.setAttribute("background-color", "black")
+        card.setAttribute("id", "cards")
       
         let container = document.querySelector("#container");
         container.appendChild(card);
-        
-        container.setAttribute("display", "flex");
+      
     });
 
