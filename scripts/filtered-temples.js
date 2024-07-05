@@ -21,7 +21,7 @@ const temples = [
       dedicated: "2005, August, 7",
       area: 11500,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/800x500/aba-nigeria-temple-lds-273999-wallpaper.jpg"
     },
     {
       templeName: "Manti Utah",
@@ -29,7 +29,7 @@ const temples = [
       dedicated: "1888, May, 21",
       area: 74792,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/800x500/manti-temple-766504-wallpaper.webp"
     },
     {
       templeName: "Payson Utah",
@@ -77,72 +77,83 @@ const temples = [
         dedicated: "1981, February, 19",
         area: 18691,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/1200x675/apia-samoa-temple-lds-495972-wallpaper.jpg"},
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/800x450/apia-samoa-temple-lds-495972-wallpaper.jpg"},
     {
         templeName: "Anchorage Alaska",
         location: "Anchorage, Alaska",
         dedicated: "1998, April, 17",
         area: 11937,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/1280x800/anchorage-temple-lds-746769-wallpaper.jpg"},
-    {   templeName: "Arequipa Peru",
-        location: "Arequipa, Peru",
-        dedicated: "2017, March, 4",
-        area: 26969,
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/800x450/anchorage-temple-lds-253274-wallpaper.jpg"},
+    {   templeName: "Belem Brazil",
+        location: "Belem-PA, Brazil",
+        dedicated: "2022, November, 20",
+        area: 28675,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/1200x1920/3-6e1fb66e74b4d3aedacebe3388757fc92d019668.jpeg"}
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/belem-brazil/800x500/belem_brazil_temple_exterior2.jpg"}
     
       ]
 
-      temples.forEach(res => {
-        let card = document.createElement("div");
-        let para1 = document.createElement("div");
-        let para2 = document.createElement("div");
-        let para3 = document.createElement("div");
-    
-        
-        let header = document.createElement("H1")
-        let temple = document.createTextNode(res.templeName);
-        header.appendChild(temple);
-        card.appendChild(header);
+createTempleCard(temples);
 
-        card.style.textAlign="center";
-        
-        let locationTitle = document.createElement("span");
-        locationTitle.innerText="Location: ";
-        locationTitle.style.color="blue";
-        let location = document.createTextNode(res.location);
+function checkOld(value) {
+  let num = Number(value);
+  alert(value);
+  return num >= 2000;
+}
+function checkNew(value){
+  alert(value);
+  return value = "2000";
+}
+const homeLink = document.querySelector("#home");
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
 
-        //card.appendChild(para);
-        para1.appendChild(locationTitle);
-        para1.insertBefore(location, locationTitle);
-      
-        para1.appendChild(location);
-        para1.style.color="black";
-        //para1.insertAdjacentHTML("beforebegin","<div>location");
-        card.appendChild(para1);
+homeLink.addEventListener("click", () => {
+  createTempleCard(temples)});
 
-        let dedicated = document.createTextNode(res.dedicated);
-        para2.appendChild(dedicated).splitText;
-        para2.insertAdjacentHTML("afterbegin","<span style='color: blue'>Dedicated: </span>")
-        card.appendChild(para2);
-       
 
-        let area = document.createTextNode(res.area);
-        para3.appendChild(area);
-        para3.insertAdjacentHTML("afterbegin","<span style='color: blue'>Size: </span>")
-        card.appendChild(para3);
-        
-        let image = document.createElement("img");
-    
-        image.setAttribute("loading","lazy");
-        image.src = res.imageUrl;
-        card.appendChild(image);
-        card.setAttribute("background-color", "black")
-        card.setAttribute("id", "cards")
-      
-        let container = document.querySelector("#container");
-        container.appendChild(card);
-      
+oldLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated < "1900"));
+});
+
+newLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.dedicated > "2000"));
+});
+
+largeLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+smallLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+function createTempleCard(filteredTemples){
+  document.querySelector(".container").innerHTML = "";
+  filteredTemples.forEach(temple => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3")
+    let location = document.createElement("p");
+    let dedicated = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${ temple.location}`;
+    dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Area:</span>  ${temple.area} sq ft`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(img);
+          
+    document.querySelector(".container").appendChild(card);   
     });
+      }
 

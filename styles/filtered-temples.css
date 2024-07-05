@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 header {background-color:greenyellow;
 text-align: center;
 display: flex;
 height:auto; max-width: 100%;}
-
+body {
+    margin: 0px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 nav {
     background-color:yellow;
@@ -41,6 +45,8 @@ nav a:hover {
 footer {
     text-align: center;
     background-color: greenyellow;
+    margin-top: 30px;
+
 }
 #menu {
     display: block;
@@ -63,8 +69,7 @@ footer {
 .navigation li {
     display: none;
 }
-#container p {display:flex;
-flex-direction: column; width:50%;}
+
 .navigation a {
     display: block;
     padding: .75rem;
@@ -83,42 +88,56 @@ flex-direction: column; width:50%;}
 #menu.show::before {
     content: "X";
 }
-body {
-    max-width: auto;
-    width: 
-}
-#container {
+div.container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: solid 2px grey;
+   
+    background: rgba(165, 192, 189, 0.3)
 
-    background-color: red;
-    border: black;
-    border-style: dashed;
-    justify-content: space-around;}
-div#cards { border: black;
-    display: inline-grid;
-    border-style: dashed;
-    height: auto;
+}
+
+div.container p{
+    display: flex;
+    text-align: center;
     width: 100%;
-    justify-content: space-around;
-    column-gap: 40px;
-    margin: ;
-  
+    flex-direction: row;
+    justify-content: center;
+    margin: 3px;
+    
+
     
 
 }
-div#cards img {
-    margin: ;
-
-    width: 100%;
-    height: auto;
-    
-
+div.container span {
+    color: rgb(9, 9, 152);
    
 }
+section img {
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+   border: 1px solid rgba(127, 121, 121, 0.3);
+   box-shadow:0px 4px 8px 0 blue;
+   aspect-ratio: 16/10;
+}
+
 .item {
     text-align: center;
 }
+
 
 
 
@@ -126,28 +145,18 @@ h2 {
     text-align: center;
 }
 @media screen and (max-width: 600px){ h1 {color:black;}
-
-    
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+  
     h1 {
         padding-top: 30px;
     }
-    .container 
-    {display: inline-block;
-        grid-template-columns: 1fr;
-        padding: 0;
-        max-width: 100%;
-        
-        margin: 0;
-        height: auto;
-    }
     header {
-        vertical-align: middle;
         text-align: center;
     }
     nav {margin-left: 0px;}
-    .img {width:auto; height:auto;}
   
     .navigation a {font-size: .5rem;}
-
-  .item {margin-right:5px; margin-left: 0px;}
 }
