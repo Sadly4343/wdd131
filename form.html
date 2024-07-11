@@ -15,64 +15,69 @@
 </head>
 <body>
 <h1>Product Review</h1>
-<form action="review.html" method="get" class="form"></form>
-    <div class="form">
-        <label for="select-product">Product Name</label>
-        <div class="select">
-    
-        <select name="select-product" id="select-product"
-            required>
-            <option value="select a product" disabled selected>select a product</option>
-            <option value="select a product">Apple</option>
-        </select>
-        </div>
-        <label>Overall Rating</label>
-        <div class="stars">
-    
-            <label for="One star">*</label>
-            <input type="radio" id="product_rating" name="product_rating" value="One star">
-            <label for="Two star">*</label>
-            <input type="radio" id="product_rating" name="product_rating" value="Two star">
-            <label for="Three star">*</label>
-            <input type="radio" id="product_rating" name="product_rating" value="Three star">
+<div class="container">
+    <form action="review.html" method="get" class="form"></form>
+            <label for="select-product">Product Name</label>
+            <div class="select">
+        
+            <select name="select-product" id="select-product"
+                required>
+                <option value="select a product" disabled selected>select a product</option>
+                <option value="select a product">Apple</option>
+            </select>
+            </div>
+            <label>Overall Rating</label>
+            <div class="stars">
+        
+                <label for="One star">⭐<br>
+                <input type="radio" id="product_rating" name="product_rating" value="One star">
+                </label>
+                <label for="Two star">⭐⭐<br>
+                <input type="radio" id="product_rating" name="product_rating" value="Two star">
+                </label>
+                <label for="Three star">⭐⭐⭐<br>
+                <input type="radio" id="product_rating" name="product_rating" value="Three star">
+                </label>
+                <label for="Four star">⭐⭐⭐⭐<br>
+                <input type="radio" id="product_rating" name="product_rating" value="Four star">
+                </label>
+                <label for="Five star">⭐⭐⭐⭐⭐<br>
+                <input type="radio" id="product_rating" name="product_rating" value="Five star">
+                </label>
+            </div>
+            <label>Date of Installation</label>
+            <div class="date">
+                <input type="date" id="installation" name="date_install" value="" required>
+                
+            </div>
+            <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
+            <div class="features">
+                <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
+                <label for=Durability>Durability</label>
+                <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
+                <label for=EaseofUse>Ease of Use</label>
+                <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
+                <label for=Performance>Performance</label>
+                <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
+                <label for=Design>Design</label>
+            </div>
+         
+            <div class="review">
+                <label>Written Review (optional)</label>
+                <textarea id="review" name="review" rows="4" cols="50">
+                </textarea>
+            </div>
+            <label>Your name (optional)</label>
+            <div class="username">
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="complete-review">
+                <input type="submit" value="Complete Review!">
+            </div>
 
-            <label for="Four star">*</label>
-            <input type="radio" id="product_rating" name="product_rating" value="Four star">
-            <label for="Five star">*</label>
-            <input type="radio" id="product_rating" name="product_rating" value="Five star">
-        </div>
-        <label>Date of Installation</label>
-        <div class="date">
-            <input type="date" id="installation" name="date_install" value="" required>
-            
-        </div>
-        <label>Which features did you find useful in the product? </label>
-        <div class="features">
-            <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
-            <label for=Durability>Durability</label>
-            <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
-            <label for=EaseofUse>Ease of Use</label>
-            <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
-            <label for=Performance>Performance</label>
-            <input type="checkbox" id="feature_selection" name="feature_selection" value="features">
-            <label for=Design>Design</label>
-        </div>
-        <label>Written Review (optional)</label>
-        <div class="review">
-            <textarea id="review" name="review" rows="4" cols="50">
-            </textarea>
-        </div>
-        <label>Your name (optional)</label>
-        <div class="username">
-            <input type="text" id="username" name="username">
-        </div>
-        <div class="Complete-Review">
-            <input type="submit" value="Complete Review!">
-        </div>
 
-
-    </div>
-</form>
+    </form>
+</div>
 <footer>
     <p>
     <span id="currentyear"></span>
