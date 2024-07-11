@@ -6,6 +6,7 @@ class="highlight">${today.getFullYear()}</span>`;
 
 const date = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = date;
+
 const products = [
     {
       id: fc-1888,
@@ -33,3 +34,5 @@ const products = [
       averagerating: 5.0
     }
   ];
+
+let optionsList = document.getElementById()
