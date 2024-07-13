@@ -16,7 +16,7 @@
 <body>
 <h1>Product Review</h1>
 <div class="container">
-    <form action="review.html" method="get" class="form">
+    <form onsubmit="save_data()" action="review.html" method="get" class="form">
             <label for="select-product">Product Name*</label>
             <div class="select">
         
@@ -72,7 +72,7 @@
                 <input type="text" id="username" name="username">
             </div>
             <div class="complete-review">
-                <input type="submit" value="Complete Review!">
+                <input type="submit" id="submit" value="Complete Review!">
             </div>
 
 
