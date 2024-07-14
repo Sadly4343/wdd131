@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Exo 2", sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    background-color: rgb(192, 14, 14);
+    margin: 0;
+}
+p { justify-content: center; color: rgb(0, 0, 0);}
+h1, h2 { background-color: green; color: white; margin: 0;}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul.navigation.show {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+header {border: solid;}
+nav {
+    background-color: green;
+ 
+}
+#menu {
+    font-size:small;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: black;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.navigation a:hover, navigation a:active {
+    color: white;
+    background-color: black;
+}
+.show li {
+    display:block;
+}
+#menu.show::before {
+    content: "X";
+}
+ul.navigation.sho {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 601px)
+{ul.navigation {flex-direction: column; padding: 0;} header {background-color: red;padding: 5px; font-size: 1.2rem;}main {display: inline-block;
+    grid-template-columns: 1fr;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    height: auto} section {border-bottom: 1px solid grey;} .title {display:inline-block; margin: 10px;} .title img {width:50px; height:50px;
+        margin:0; vertical-align: middle;} h3::after {content: none;} h2,h3 {background-color: white; margin:0; ;}.show li {
+            display:block;
+        }
+        #menu.show::before {
+            content: "X";
+        }
+        ul.navigation.sho {
+            display: flex;
+            flex-direction: column;
+        }#menu::before {
+            content: "☰"
+        }}
+@media screen and (min-width: 601px) {.navigation {
+    display:flex;
+    justify-content: space-around;}
+
+}
+.navigation li {
+    display:flex;
+    justify-content: space-around;
+
+
+}
+.navigation a {
+    text-align: center;
+    
+}
+#menu {
+    display:none;
+}
