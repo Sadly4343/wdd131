@@ -4,5 +4,7 @@ body {
     text-align: center;
     width: auto;
     height: 100%;
+    background-color: rgb(192, 14, 14);
 }
-p { justify-content: center;}
+p { justify-content: center; color: rgb(0, 0, 0);}
+h1, h2 { background-color: green; color: white;}
