@@ -19,25 +19,24 @@ document.getElementById("lastModified").innerHTML = date;
 
 const temples = [
     {
-      templeName: "1/2 Day Trip",
-      location: "Aba, Nigeria",
+      tripName: "1/2 Day Trip",
+      location: "Upper Snake River",
       dedicated: "2005, August, 7",
-      area: 11500,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/800x500/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+      ""
     },
     {
-      templeName: "Day Trip",
-      location: "Manti, Utah, United States",
+      tripName: "Day Trip",
+      location: "Lower Snake River",
       dedicated: "1888, May, 21",
        imageUrl: "images/fish_medium.webp"
     },
     {
-      templeName: "2 Day Trip",
-      location: "Payson, Utah, United States",
+      tripName: "2 Day Trip",
+      location: "Lower Snake Resevoir",
       dedicated: "2015, June, 7",
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+      ""
     },
    
     
@@ -45,25 +44,15 @@ const temples = [
 
 createTempleCard(temples);
 
-function checkOld(value) {
-  let num = Number(value);
-  alert(value);
-  return num >= 2000;
-}
-function checkNew(value){
-  alert(value);
-  return value = "2000";
-}
 const homeLink = document.querySelector("#home");
 
-function createTempleCard(filteredTemples){
+function createTempleCard(Temples){
   document.querySelector(".container").innerHTML = "";
-  filteredTemples.forEach(temple => {
+  Temples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3")
     let location = document.createElement("p");
     let dedicated = document.createElement("p");
-    let area = document.createElement("p");
     let img = document.createElement("img");
 
     name.textContent = temple.templeName;
