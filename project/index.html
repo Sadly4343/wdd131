@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts/index.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="styles.css/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/index-large.css">
     <title>Home Page Backwater Fishing Guides</title>
 
 
@@ -15,35 +16,47 @@
         <nav>
             <a id="menu" href="#"></a>
             <ul class="navigation">
-                <li><a href="#">Home
+                <li><a href="index.html">Home
                 </a></li>
-                <li><a href="#">Old
+                <li><a href="trip.html">Trips
                 </a></li>
-                <li><a href="#">New
-                </a></li>
-                <li><a href="#">Large
-                </a></li>
-                <li><a href="#">Small
+                <li><a href="contact.html">Contact Us
                 </a></li>
             </ul>
         </nav>
     </header>
-    <div class="hero">
-        <picture>
-          <source srcset="images/river-background.webp" media="(min-width:800px)">
-          <source srcset="images/fish_medium.webp" media="(min-width:500px)">
-          <img src="images/fish_small.webp" alt="River trout in River" width="500" height="334">
-        </picture>
+    <div class="container">
+        <div class="hero">
+            <picture>
+            <source srcset="images/river-background.webp" media="(min-width:600px)">
+            <source srcset="images/fish_medium.webp" media="(min-width:500px)">
+            <img src="images/fish_small.webp" alt="River trout in River" width="500" height="334">
+            </picture>
+        </div>
+        <section id="card_1">
+            <h2>View Trips</h2>
+            <button type="button" id="btn">Book Here Now!</button>
+            <p>Are you looking for the next adventure? <br>
+            Book now to reserve a spot for the fishing trip of dreams!</p>
+        </section>
+        <section id="card_2">
+            <h3>Company History</h3>
+            <p>We have been serving the Greater Snake River area for over 30 years!
+         Offering the best fishing experience in the area and in the business of creating memories and getting you that dream trout!<br></p>
+        <p>We have the best guides on the river with a combined knowledge of over 100 years between them! Visit our contact page to with any questions!</p>
+
+        </section>
     </div>
-    <section>
-        <h2></h2>
-
-    </section>
-    <section id="card_1">
-        <h3>
-
-    </section>
- 
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            Backwater Fishing Guides🐟
+            Washington State🐟<br>
+            Updated 
+            </p>
+            <p id="lastModified"> Last Modified
+            </p>
+    </footer>
 
 
 
