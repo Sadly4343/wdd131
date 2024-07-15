@@ -17,59 +17,66 @@ class="highlight">${today.getFullYear()}</span>`;
 const date = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = date;
 
-const temples = [
+const trips = [
     {
       tripName: "1/2 Day Trip",
       location: "Upper Snake River",
-      dedicated: "2005, August, 7",
+      availabilty: "September-December",
+      cost: "$ 150",
       imageUrl:
-      ""
+      "images/river.webp"
     },
     {
       tripName: "Day Trip",
       location: "Lower Snake River",
-      dedicated: "1888, May, 21",
-       imageUrl: "images/fish_medium.webp"
+      availabilty: "September-December",
+      cost: "$ 275",
+        imageUrl: "images/river_day2.webp"
     },
     {
       tripName: "2 Day Trip",
       location: "Lower Snake Resevoir",
-      dedicated: "2015, June, 7",
+      availabilty: "September-December",
+      cost: "$ 400",
       imageUrl:
-      ""
+      "images/river_day_5.webp"
     },
    
     
       ]
 
-createTempleCard(temples);
+createTripsCard(trips);
 
 const homeLink = document.querySelector("#home");
 
-function createTempleCard(Temples){
+function createTripsCard(trips){
   document.querySelector(".container").innerHTML = "";
-  Temples.forEach(temple => {
+  trips.forEach(trip => {
     let card = document.createElement("section");
     let name = document.createElement("h3")
     let location = document.createElement("p");
     let dedicated = document.createElement("p");
+    let cost = document.createElement("button");
     let img = document.createElement("img");
 
-    name.textContent = temple.templeName;
-    location.innerHTML = `<span class="label">Location:</span> ${ temple.location}`;
-    dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-    area.innerHTML = `<span class="label">Area:</span>  ${temple.area} sq ft`;
-    img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", `${temple.templeName} Temple`);
+    name.textContent = trip.tripName;
+    location.innerHTML = `<span class="label">Location:</span> ${trip.location}`;
+    dedicated.innerHTML = `<span class="label">Availability:</span> ${trip.availabilty}`;
+    cost.innerHTML = `<span class="label">Cost:</span> ${trip.cost}`;
+    cost.setAttribute("id", "btn");
+    img.setAttribute("src", trip.imageUrl);
+    img.setAttribute("alt", `${trips.tripName} Temple`);
     img.setAttribute("loading", "lazy");
 
     card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedicated);
-    card.appendChild(area);
+    card.appendChild(cost);
     card.appendChild(img);
           
     document.querySelector(".container").appendChild(card);   
-    });
-      }
+    })
+};   document.getElementById("btn").onclick = function() {
+        location.href = "contact.html";
+    };
 

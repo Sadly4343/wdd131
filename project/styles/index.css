@@ -32,6 +32,9 @@ nav {
     background-color: green;
  
 }
+h1 {
+    padding-top: 20px;
+}
 #menu {
     font-size:small;
     font-weight: 700;
