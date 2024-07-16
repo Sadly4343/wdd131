@@ -60,10 +60,11 @@ function createTripsCard(trips){
     let img = document.createElement("img");
 
     name.textContent = trip.tripName;
-    location.innerHTML = `<span class="label">Location:</span> ${trip.location}`;
+    location.innerHTML = `<span class="label">Location:</span> ${trip.location+'?tripcost='+trip.cost}`;
     dedicated.innerHTML = `<span class="label">Availability:</span> ${trip.availabilty}`;
     cost.innerHTML = `<span class="label">Cost:</span> ${trip.cost}`;
     cost.setAttribute("id", "btn");
+    cost.setAttribute("onclick", "sendMe()");
     img.setAttribute("src", trip.imageUrl);
     img.setAttribute("alt", `${trips.tripName} Temple`);
     img.setAttribute("loading", "lazy");
@@ -76,7 +77,19 @@ function createTripsCard(trips){
           
     document.querySelector(".container").appendChild(card);   
     })
-};   document.getElementById("btn").onclick = function() {
+}; 
+
+function sendMe(){
+  alert('send');
+  this.location.href="contact.html";
+  document.getElementById("btn").onclick = function() {
         location.href = "contact.html";
     };
+}
+
+//document.getElementById("btn").onclick = function() {
+//        location.href = "contact.html";
+//    };
+
+//alert(FormData());
 
