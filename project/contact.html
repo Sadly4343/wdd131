@@ -33,10 +33,23 @@
         </section>
 
             <form onsubmit="save_data()" action="review.html" method="get" class="form">
+                <label>First Name*</label>
+                <div class="username">
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <label>Email Address*</label>
+                <div class="username">
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <label>Phone Number*</label>
+                <div class="username">
+                    <input type="text" id="username" name="username" required>
+                </div>
                     <label for="select-product">Trip Selection*</label>
                     <div class="select">
+                        
                 
-                    <select= name="select-trip" id="select-trip"
+                    <select name="select-trip" id="select-trip"
                         required>
                         <option value="" disabled selected>Available Trips</option>
                     </select>
@@ -45,22 +58,6 @@
                     <div class="date">
                         <input type="date" id="installation" name="date_install" value="" required>
                         
-                    </div>
-                    <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
-                    <div class="features">
-                        <input type="checkbox" id="Durability" name="feature_selection" value="features">
-                        <label for=Durability>Durability</label>
-                        <input type="checkbox" id="EaseofUse" name="feature_selection" value="features">
-                        <label for=EaseofUse>Ease of Use</label>
-                        <input type="checkbox" id="Performance" name="feature_selection" value="features">
-                        <label for=Performance>Performance</label>
-                        <input type="checkbox" id="Design" name="feature_selection" value="features">
-                        <label for=Design>Design</label>
-                    </div>
-                 
-                    <label>Your name (optional)</label>
-                    <div class="username">
-                        <input type="text" id="username" name="username">
                     </div>
                     <div class="complete-review">
                         <input type="submit" id="submit" value="Complete Trip Signup!">

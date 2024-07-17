@@ -19,40 +19,29 @@ document.getElementById("lastModified").innerHTML = date;
 
 currentyear.innerHTML = `@<span  class="highlight">${today.getFullYear()}</span>`;
 
-const products = [
+const trips = [
     {
-      id: 'fc-1888',
-      name: "flux capacitor",
-      'avg-rating': 4.5
+      id: '1/2-day-trip',
+      name: "1/2 Day Trip",
     },
     {
-      id: 'fc-2050',
-      name: "power laces",
-      averagerating: 4.7
+      id: 'day-trip',
+      name: "1 Day Trip",
+
     },
     {
-      id: 'fs-1987',
-      name: "time circuits",
-      averagerating: 3.5
+      id: '2-day-trip',
+      name: "2 Day Trip",
     },
-    {
-      id: 'ac-2000',
-      name: "low voltage reactor",
-      averagerating: 3.9
-    },
-    {
-      id: 'jj-1969',
-      name: "warp equalizer",
-      averagerating: 5.0
-    }
+ 
   ];
 
 let selectTag = document.getElementById('select-trip');
   
-  products.forEach (product => {
+  trips.forEach (trip => {
       let opt = document.createElement("option");
-      opt.value = product.id; // the index
-      opt.innerHTML = product.name;
+      opt.value = trip.id; // the index
+      opt.innerHTML = trip.name;
       selectTag.append(opt);
   });
 

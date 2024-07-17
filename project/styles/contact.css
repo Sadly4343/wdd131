@@ -36,6 +36,14 @@ nav {
     display: flex;
     
 }
+.form { border: solid;
+    border-radius: 20px;
+    border-color: white;
+    height: auto;
+    width: 50%;
+
+
+}
 #menu {
     font-size:small;
     font-weight: 700;
@@ -75,7 +83,7 @@ ul.navigation.show {
     flex-direction: column;
 }
 @media screen and (max-width: 601px)
-{ul.navigation {flex-direction: column; padding: 0;} header {background-color: red;padding: 5px; font-size: 1.2rem;}main {display: inline-block;
+{ul.navigation {flex-direction: column; padding: 0;} header {background-color: red;padding: 5px; font-size: 1.2rem;} body  {display: inline-block;
     grid-template-columns: 1fr;
     padding: 0;
     max-width: 100%;
