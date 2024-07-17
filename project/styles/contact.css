@@ -7,6 +7,7 @@ body {
     background-color: rgb(192, 14, 14);
     margin: 0;
 }
+
 p { justify-content: center; color: rgb(0, 0, 0);}
 h1, h2 { background-color: green; color: white; margin: 0;}
 nav ul {
@@ -30,6 +31,10 @@ header {border: solid;}
 nav {
     background-color: green;
  
+}
+.container {
+    display: flex;
+    
 }
 #menu {
     font-size:small;

@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logan Hartshorn Product Review Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Logan Hartshorn Form Layout">
+    <meta name="author" content="Logan Hartshorn">
+    <script src="scripts/contact.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <title>Home Page Backwater Fishing Guides</title>
+    
+
 </head>
 <body>
+    <header>
+        <h1>Backwater Fishing Guides</h1>
+            <nav>
+                <a id="menu" href="#"></a>
+                <ul class="navigation">
+                    <li><a href="index.html">Home
+                    </a></li>
+                    <li><a href="trip.html">Trips
+                    </a></li>
+                    <li><a href="contact.html">Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+        <section></section>
+        <h2>Contact Us</h2>
+        </section>
+
+            <form onsubmit="save_data()" action="review.html" method="get" class="form">
+                    <label for="select-product">Trip Selection*</label>
+                    <div class="select">
+                
+                    <select= name="select-trip" id="select-trip"
+                        required>
+                        <option value="" disabled selected>Available Trips</option>
+                    </select>
+                    </div>
+                    <label>Date of Trip*</label>
+                    <div class="date">
+                        <input type="date" id="installation" name="date_install" value="" required>
+                        
+                    </div>
+                    <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
+                    <div class="features">
+                        <input type="checkbox" id="Durability" name="feature_selection" value="features">
+                        <label for=Durability>Durability</label>
+                        <input type="checkbox" id="EaseofUse" name="feature_selection" value="features">
+                        <label for=EaseofUse>Ease of Use</label>
+                        <input type="checkbox" id="Performance" name="feature_selection" value="features">
+                        <label for=Performance>Performance</label>
+                        <input type="checkbox" id="Design" name="feature_selection" value="features">
+                        <label for=Design>Design</label>
+                    </div>
+                 
+                    <label>Your name (optional)</label>
+                    <div class="username">
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="complete-review">
+                        <input type="submit" id="submit" value="Complete Trip Signup!">
+                    </div>
+        
+        
+            </form>
+        </div>
+        <section>
+            <h3>Contact Us</h3>
+            <p></p>
+        </section>
+        <footer>
+            <p>
+            <span id="currentyear"></span>
+            Logan Hartshorn
+            Washington State<br>
+            Last Modified
+            </p>
+            <p id="lastModified"> Last Modified
+            </p>
+        
+        </footer>
+        </body>
+        </html>
     
 </body>
 </html>

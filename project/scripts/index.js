@@ -23,7 +23,7 @@ document.getElementById("btn").onclick = function() {
 const currentyear = document.querySelector("#currentyear");
 const today = new Date()
 
-currentyear.innerHTML = `@ <span
+currentyear.querySelector = `@ <span
 class="highlight">${today.getFullYear()}</span>`;
 
 const date = new Date(document.lastModified);

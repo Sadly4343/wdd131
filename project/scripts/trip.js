@@ -60,7 +60,7 @@ function createTripsCard(trips){
     let img = document.createElement("img");
 
     name.textContent = trip.tripName;
-    location.innerHTML = `<span class="label">Location:</span> ${trip.location+'?tripcost='+trip.cost}`;
+    location.innerHTML = `<span class="label">Location:</span> ${trip.location}`;
     dedicated.innerHTML = `<span class="label">Availability:</span> ${trip.availabilty}`;
     cost.innerHTML = `<span class="label">Cost:</span> ${trip.cost}`;
     cost.setAttribute("id", "btn");
