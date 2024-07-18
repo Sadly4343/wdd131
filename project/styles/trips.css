@@ -4,11 +4,11 @@ body {
     text-align: center;
     width: auto;
     height: 100%;
-    background-color: rgb(192, 14, 14);
+    background-color: rgb(197, 166, 166);
     margin: 0;
 }
 p { justify-content: center; color: rgb(0, 0, 0);}
-h1, h2 { background-color: green; color: white; margin: 0;}
+h1, h2 { background-color: rgb(123, 160, 123); color:black; margin: 0;}
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@ ul.navigation.show {
 }
 header {border: solid;}
 nav {
-    background-color: green;
+    background-color:rgb(123, 160, 123);
  
 }
 #menu {
@@ -57,8 +57,10 @@ header {
     display: block;
     padding: .75rem;
     text-decoration: none;
-    color: black;
+    color:black;
     font-weight: 700;
+    border: solid;
+    margin-bottom: 5px;
 }
 .navigation a:hover, navigation a:active {
     color: white;
@@ -74,9 +76,10 @@ ul.navigation.show {
     display: flex;
     flex-direction: column;
 }
+footer p {color: black;}
 @media screen and (max-width: 601px)
 {ul.navigation {flex-direction: column; padding: 0;} 
-header {background-color: red;padding: 5px; font-size: 1.2rem;}
+header {background-color: rgb(197, 166, 166);;padding: 5px; font-size: 1.2rem;}
 main {display: inline-block;
     grid-template-columns: 1fr;
     padding: 0;
@@ -103,16 +106,16 @@ main {display: inline-block;
     
         }
         button {
-            color: white;
+            color: black;
             padding: 20px;
             margin: 10px;
             height: auto;
-            background-color: green;
+            background-color:rgb(123, 160, 123);
             border: solid 5px;
             border-radius: 10px;
             box-shadow: 0px 0px 20px 0px;
             border-color: white;
-        } section {   background-color: red;
+        } section {   background-color:rgb(197, 166, 166);
             border: solid 5px;
             border-radius: 20px;
             border-color: white;
@@ -123,7 +126,6 @@ main {display: inline-block;
             border-color: black;
             border-radius: 20px;
             border-color: white;
-            background-color: green;
-            color: white;
-        }
-    footer p {color:white}}
+            background-color:rgb(123, 160, 123);
+            color: black;
+        }}

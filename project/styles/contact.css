@@ -4,10 +4,9 @@ body {
     text-align: center;
     width: auto;
     height: 100%;
-    background-color: rgb(194, 132, 132);
+    background-color:rgb(197, 166, 166);
    
     box-sizing: border-box;
-    max-width: 1500px;
     margin: auto;
 }
 
@@ -88,7 +87,7 @@ header {
     display: block;
     padding: .75rem;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 700;
 }
 .navigation a:hover, navigation a:active {
