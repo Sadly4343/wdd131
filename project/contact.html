@@ -27,26 +27,25 @@
             </nav>
         </header>
         <div class="container">
-        <section>
-        <h2>Contact Us</h2>
-        <p></p>
+        <section class="work">
+        <h2>Work Testimonial</h2>
+        <p>I have been working for Backwater Fishing Guides for over 20 years and can promise we will always guide you to the fish that will leave an unforgettable experience for any angler!</p>
         <img src="images/guide.webp" alt="Backwater Fishing Guide">
         </section>
-
-            <form onsubmit="save_data()" action="review.html" method="get" class="form">
-                <label>First Name*</label>
+            <form onsubmit="save_data()" action="review.html" method="get" class="form" autocomplete="on">
+                <label for="name">First Name*</label>
                 <div class="username">
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="name" name="name" required autocomplete="on">
                 </div>
-                <label>Email Address*</label>
-                <div class="username">
-                    <input type="text" id="username" name="username" required>
+                <label for="email">Email Address*</label>
+                <div class="email">
+                    <input type="text" id="email" name="email" required autocomplete="on">
                 </div>
-                <label>Phone Number*</label>
-                <div class="username">
-                    <input type="text" id="username" name="username" required>
+                <label for="phone_number">Phone Number*</label>
+                <div class="phone_number">
+                    <input type="text" id="phone_number" name="phone_number" required>
                 </div>
-                    <label for="select-product">Trip Selection*</label>
+                    <label for="select-trip">Trip Selection*</label>
                     <div class="select">
                         
                 
@@ -55,9 +54,9 @@
                         <option value="" disabled selected>Available Trips</option>
                     </select>
                     </div>
-                    <label>Date of Trip*</label>
-                    <div class="date">
-                        <input type="date" id="installation" name="date_install" value="" required>
+                    <label for="trip_date">Date of Trip*</label>
+                    <div class="trip_date">
+                        <input type="date" id="trip_date" name="trip_date" value="" required>
                         
                     </div>
                     <div class="complete-review">
@@ -66,7 +65,9 @@
         
         
             </form>
-        </div>
+            <section>
+                <h3>Contact Us!</h3>
+            </section>
         <footer>
             <p>
             <span id="currentyear"></span>

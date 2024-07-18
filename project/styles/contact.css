@@ -19,30 +19,47 @@ nav ul {
     padding: 0;
     
 }
+input, select{padding: 10px;}
+
+form.form {
+    text-align: left; padding: 10px;}
 img {
-    width: 100%;
+    width: 50%;
     height: auto;
     
 }
+.work {width:100%;
+    height: auto;
+
+}
+div.complete-review {margin-top: 20px;}
 ul.navigation.show {
     margin: 0;
     padding: 0;
     justify-content: space-between;
 }
+input#submit {
+    background-color: rgb(122, 255, 122);
+}
+form.div {
+    padding-top: 10px;
+}
+
 header {border: solid;}
 nav {
     background-color: green;
  
 }
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     
 }
 .form { border: solid;
     border-radius: 20px;
     border-color: white;
     height: auto;
-    width: 50%;
+    width: auto;
 
 
 }
@@ -84,14 +101,10 @@ ul.navigation.show {
     display: flex;
     flex-direction: column;
 }
-label, input{
 
-    display: inline-block;
-    text-align: l;
-}
-
-div.username {
+.form div {
     margin-bottom: 10px;
+    width: 50%;
 }
 @media screen and (max-width: 601px)
 {ul.navigation {flex-direction: column; padding: 0;} header {background-color: red;padding: 5px; font-size: 1.2rem;} body  {display: inline-block;

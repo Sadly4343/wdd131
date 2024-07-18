@@ -31,7 +31,7 @@ const trips = [
       location: "Lower Snake River",
       availabilty: "September-December",
       cost: "$ 275",
-        imageUrl: "images/river_day2.webp"
+        imageUrl: "images/river-day2.webp"
     },
     {
       tripName: "2 Day Trip",
@@ -39,7 +39,7 @@ const trips = [
       availabilty: "September-December",
       cost: "$ 400",
       imageUrl:
-      "images/river_day_5.webp"
+      "images/river-day-5.webp"
     },
    
     
