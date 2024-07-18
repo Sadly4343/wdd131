@@ -66,7 +66,7 @@ function createTripsCard(trips){
     cost.setAttribute("id", "btn");
     cost.setAttribute("onclick", "sendMe()");
     img.setAttribute("src", trip.imageUrl);
-    img.setAttribute("alt", `${trips.tripName} Temple`);
+    img.setAttribute("alt", `${trips.tripName} Trips`);
     img.setAttribute("loading", "lazy");
 
     card.appendChild(name);

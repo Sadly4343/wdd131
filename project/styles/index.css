@@ -85,6 +85,8 @@ ul.navigation.show {
         #menu.show::before {
             content: "X";
         }
+        #river {border: solid 5px;
+        border-radius: 20px; border-color: white;}
         ul.navigation.sho {
             display: flex;
             flex-direction: column;

@@ -4,8 +4,9 @@ body {
     text-align: center;
     width: auto;
     height: 100%;
-    background-color: rgb(192, 14, 14);
+    background-color: rgb(194, 132, 132);
     margin: 0;
+    box-sizing: border-box;
 }
 
 p { justify-content: center; color: rgb(0, 0, 0);}
@@ -21,6 +22,7 @@ nav ul {
 img {
     width: 100%;
     height: auto;
+    
 }
 ul.navigation.show {
     margin: 0;
@@ -81,6 +83,15 @@ header {
 ul.navigation.show {
     display: flex;
     flex-direction: column;
+}
+label, input{
+
+    display: inline-block;
+    text-align: l;
+}
+
+div.username {
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 601px)
 {ul.navigation {flex-direction: column; padding: 0;} header {background-color: red;padding: 5px; font-size: 1.2rem;} body  {display: inline-block;
