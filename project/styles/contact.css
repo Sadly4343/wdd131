@@ -5,12 +5,14 @@ body {
     width: auto;
     height: 100%;
     background-color: rgb(194, 132, 132);
-    margin: 0;
+   
     box-sizing: border-box;
+    max-width: 1500px;
+    margin: auto;
 }
 
 p { justify-content: center; color: rgb(0, 0, 0);}
-h1, h2 { background-color: green; color: white; margin: 0;}
+h1, h2, h3, h4, h5{ background-color: green; color: white; margin: 0; font-size: 1.5em;}
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -19,15 +21,17 @@ nav ul {
     padding: 0;
     
 }
+#contact {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
 input, select{padding: 10px;}
 
 form.form {
     text-align: left; padding: 10px;}
-img {
-    width: 50%;
-    height: auto;
-    
-}
+img {height: 500px;
+width: auto;}
 .work {width:100%;
     height: auto;
 

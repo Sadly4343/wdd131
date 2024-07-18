@@ -80,7 +80,6 @@ function createTripsCard(trips){
 }; 
 
 function sendMe(){
-  alert('send');
   this.location.href="contact.html";
   document.getElementById("btn").onclick = function() {
         location.href = "contact.html";
