@@ -13,8 +13,8 @@ const today = new Date()
 currentyear.innerHTML = `@ <span
 class="highlight">${today.getFullYear()}</span>`;
 
-const date = new Date(document.lastModified);
-document.getElementById("lastModified").innerHTML = date;
+const lastModifiedDate = new Date(document.lastModified);
+document.getElementById("lastModified").innerHTML = lastModifiedDate.toLocaleDateString("en-US");
 
 
 currentyear.innerHTML = `@<span  class="highlight">${today.getFullYear()}</span>`;
@@ -38,7 +38,7 @@ const trips = [
 
 let selectTag = document.getElementById('select-trip');
   
-  trips.forEach (trip => {
+  trips.forEach(trip => {
       let opt = document.createElement("option");
       opt.value = trip.id; // the index
       opt.innerHTML = trip.name;

@@ -4,18 +4,19 @@
     .container {
         position: relative;
     }
-    button:hover { background-color: red; transition: .7s;
+    button:hover { background-color: red; 
     }
     button {
         color: white;
         padding: 20px;
         margin: 10px;
-        height: auto;
+        transition: .7s;
         background-color: green;
-        border: solid 5px;
+        border: solid 5px white;
         border-radius: 10px;
         box-shadow: 0px 0px 20px 0px;
-        border-color: white;
+        font-weight: bold;
+        font-size: x-large;
     }
     p {
         padding: 10px;
@@ -42,11 +43,10 @@
         top: 8px;
         left:0px;
         background-color: rgb(197, 166, 166);
-        border: solid 5px;
+        border: solid 5px white;
         border-radius: 20px;
-        border-color: white;
-        height: auto;
         width: 25%;
+        font-weight: bold;
     }
     button:hover { background-color: red; transition: .7s;
     
@@ -66,7 +66,8 @@
         padding: 10px;
         color: black;
         letter-spacing: 1px;
-        font-size: small;
+        font-size: larger;
+        font-weight: bold;
     }
     h2, h3 {
         margin: 5px;
@@ -85,14 +86,10 @@
       right: 200px;
       border: solid;
       margin: 0px;
-  
-
     }
     .navigation li {
         display:flex;
         justify-content: space-around;
-    
-    
     }
     .navigation a {
         text-align: center;
@@ -112,7 +109,7 @@
 
 h3 {
     background-color: green;
-    color: white;
+    color: black;
 }
 footer {
         height: auto;

@@ -10,7 +10,7 @@ body {
     margin: auto;
 }
 
-p { justify-content: center; color: rgb(0, 0, 0);}
+p { color: rgb(0, 0, 0);}
 h1, h2, h3, h4, h5{ background-color: green; color: white; margin: 0; font-size: 1.5em;}
 nav ul {
     display: flex;
@@ -44,11 +44,11 @@ ul.navigation.show {
 input#submit {
     background-color: rgb(122, 255, 122);
 }
-form.div {
+div.form {
     padding-top: 10px;
 }
 
-header {border: solid;}
+
 nav {
     background-color: green;
  
@@ -79,8 +79,8 @@ nav {
     margin: 0 auto;
     
 }
-header {
-    text-align: center;
+header {border:solid 5px;
+    text-align: center; 
 }
 
 .navigation a {
@@ -90,7 +90,7 @@ header {
     color: white;
     font-weight: 700;
 }
-.navigation a:hover, navigation a:active {
+.navigation a:hover, .navigation a:active {
     color: white;
     background-color: black;
 }

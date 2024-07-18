@@ -8,7 +8,6 @@ hambutton.addEventListener('click', () => {
 });
 
 function submitMyForm() {
-    //location.href="trip.html";
     let frm = document.getElementById("myForm");
     let phone = document.getElementById("myPhone");
     phone.value = "360.302.0313";
@@ -16,16 +15,14 @@ function submitMyForm() {
     frm.submit();
 }
 
-document.getElementById("btn").onclick = function() {
-    //location.href = "trip.html";
-    submitMyForm();
-}
+document.getElementById("btn").addEventListener('click', submitMyForm);
+
 const currentyear = document.querySelector("#currentyear");
 const today = new Date()
 
 currentyear.querySelector = `@ <span
 class="highlight">${today.getFullYear()}</span>`;
 
-const date = new Date(document.lastModified);
-document.getElementById("lastModified").innerHTML = date;
+const lastModifiedDate = new Date(document.lastModified);
+document.getElementById("lastModified").innerHTML = lastModifiedDate.toLocaleDateString("en-US");
 
