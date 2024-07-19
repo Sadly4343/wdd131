@@ -1,10 +1,13 @@
-@media screen and (min-width: 601px) { .navigation {
-    display:flex;
-    justify-content: space-around;}
+@media screen and (min-width: 601px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
     .container {
         position: relative;
     }
-    button:hover { background-color: red; 
+    button:hover {
+        background-color: red;
     }
     button {
         color: white;
@@ -23,40 +26,36 @@
         color: white;
         letter-spacing: 5px;
     }
-  
     .navigation li {
-        display:flex;
+        display: flex;
         justify-content: space-around;
-    
-    
     }
     .navigation a {
         text-align: center;
-        
     }
-  
     .container {
         position: relative;
     }
     section#card_1 {
         position: absolute;
         top: 8px;
-        left:0px;
+        left: 0px;
         background-color: rgb(197, 166, 166);
         border: solid 5px white;
         border-radius: 20px;
         width: 25%;
         font-weight: bold;
     }
-    button:hover { background-color: red; transition: .7s;
-    
+    button:hover {
+        background-color: red;
+        transition: .7s;
     }
     button {
         color: black;
         padding: 20px;
         margin: 10px;
         height: auto;
-        background-color: rgb(123, 160, 123);;
+        background-color: rgb(123, 160, 123);
         border: solid 5px;
         border-radius: 10px;
         box-shadow: 0px 0px 20px 0px;
@@ -69,36 +68,35 @@
         font-size: larger;
         font-weight: bold;
     }
-    h2, h3 {
+    h2,
+    h3 {
         margin: 5px;
         padding: 10px;
         border: solid 5px;
         border-color: black;
         border-radius: 20px;
         border-color: white;
-    
     }
-    #river { 
+    #river {
         position: absolute;
         top: 8px;
-      height: 50%;
-      width: auto;
-      right: 200px;
-      border: solid;
-      margin: 0px;
+        height: 50%;
+        width: auto;
+        right: 200px;
+        border: solid;
+        margin: 0px;
     }
     .navigation li {
-        display:flex;
+        display: flex;
         justify-content: space-around;
     }
     .navigation a {
         text-align: center;
-        
     }
     section#card_2 {
         position: absolute;
         bottom: 8px;
-        right:0px;
+        right: 0px;
         background-color: rgb(197, 166, 166);
         border: solid 5px;
         border-radius: 20px;
@@ -106,15 +104,15 @@
         height: auto;
         width: 50%;
     }
-
-h3 {
-    background-color: green;
-    color: black;
-}
-footer {
+    h3 {
+        background-color:rgb(123, 160, 123);
+        color: black;
+    }
+    footer {
         height: auto;
         width: 100%;
     }
-footer p {margin: 0px; 
-
-}}
+    footer p {
+        margin: 0px;
+    }
+}

@@ -4,64 +4,78 @@ body {
     text-align: center;
     width: auto;
     height: 100%;
-    background-color:rgb(197, 166, 166);
-   
+    background-color: rgb(197, 166, 166);
     box-sizing: border-box;
     margin: auto;
 }
 
-p { color: rgb(0, 0, 0);}
-h1, h2, h3, h4, h5{ background-color: green; color: white; margin: 0; font-size: 1.5em;}
+p {
+    color: rgb(0, 0, 0);
+}
+
+h1, h2, h3, h4, h5 {
+    background-color: green;
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
     margin: 0;
     list-style-type: none;
     padding: 0;
-    
 }
+
 #contact {
     font-size: 1.5em;
     line-height: 2;
 }
 
-input, select{padding: 10px;}
+input, select {
+    padding: 10px;
+}
 
 form.form {
-    text-align: left; padding: 10px;}
-img {height: 500px;
-width: auto;}
-.work {width:100%;
-    height: auto;
-
+    text-align: left;
+    padding: 10px;
 }
-div.complete-review {margin-top: 20px;}
+
+img {
+    height: 500px;
+    width: auto;
+}
+
+.work {
+    width: 100%;
+    height: auto;
+}
+
+div.complete-review {
+    margin-top: 20px;
+}
+
 ul.navigation.show {
     margin: 0;
     padding: 0;
     justify-content: space-between;
 }
-input#submit {
-    background-color: rgb(122, 255, 122);
-}
-div.form {
-    padding-top: 10px;
-}
 
-
-nav {
+input#submit nav {
     background-color: green;
- 
 }
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 100vw;
     margin: 0 auto;
-    
 }
-.form { border: solid;
+
+.form {
+    border: solid;
     border-radius: 20px;
     border-color: white;
     height: auto;
@@ -69,10 +83,10 @@ nav {
     max-width: 600px;
     margin: 20px;
     padding: 20px;
-
 }
+
 #menu {
-    font-size:small;
+    font-size: small;
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
@@ -82,13 +96,19 @@ nav {
 .navigation {
     list-style: none;
     margin: 0 auto;
-    padding: 0px;
-}
-header {border:solid 5px;
-    text-align: center; 
-    margin-bottom: 20px;
+    padding: 0;
 }
 
+header {
+    border: solid 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ul.navigation.show {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
 .navigation a {
     display: block;
     padding: .75rem;
@@ -96,16 +116,58 @@ header {border:solid 5px;
     color: white;
     font-weight: 700;
 }
+header {border: solid 5px; background-color:rgb(123, 160, 123) }
+nav {
+    background-color: rgb(123, 160, 123) ;
+}
+
+.form {
+    border: solid;
+    border-radius: 20px;
+    border-color: white;
+    height: auto;
+    width: auto;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+ 
+}
+
+header {
+    border: solid 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.navigation li {display: none;}
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    border: solid;
+    margin-bottom: 5px;}
+
 .navigation a:hover, .navigation a:active {
     color: white;
     background-color: black;
 }
+
 .show li {
-    display:block;
+    display: block;
 }
+
 #menu.show::before {
     content: "X";
 }
+
 ul.navigation.show {
     display: flex;
     flex-direction: column;
@@ -115,21 +177,89 @@ ul.navigation.show {
     margin-bottom: 10px;
     width: 50%;
 }
-@media screen and (max-width: 601px)
-{ul.navigation {flex-direction: column; padding: 0;} header {background-color: red;padding: 5px; font-size: 1.2rem;} body  {display: inline-block;
-    grid-template-columns: 1fr;
-    padding: 0;
-    max-width: 100%;
-    margin: 0;
-    height: auto} section {border-bottom: 1px solid grey;} .title {display:inline-block; margin: 10px;} .title img {width:50px; height:50px;
-        margin:0; vertical-align: middle;} h3::after {content: none;} h2,h3 {background-color: white; margin:0; ;}.show li {
-            display:block;
-        }
-        #menu.show::before {
-            content: "X";
-        }
-        ul.navigation.sho {
-            display: flex;
-            flex-direction: column;
-        }#menu::before {
-            content: "☰"}}
+@media screen and (max-width: 601px) {
+    ul.navigation {flex-direction: column; padding: 0;} 
+    header {background-color:rgb(197, 166, 166);padding: 5px; font-size: 1.2rem;}
+    main {
+        display: inline-block;
+        grid-template-columns: 1fr;
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+        height: auto;
+    } 
+    img {
+        height: auto;
+        width: 99%;
+        border-radius: 20px;
+
+    }
+    form.form {
+        border: solid 5px white;
+        border-radius: 20px;
+        background-color:rgb(123, 160, 123);
+        padding: 20px;
+        margin: 20px;
+        width: 50%;
+
+        
+    }
+    section {border-bottom: 1px solid grey;  background-color:rgb(197, 166, 166);
+        border: solid 2px white;
+        border-radius: 20px;
+        height: auto;}  
+    h2,h3 {margin: 5px;
+        padding: 10px;
+        border: solid 5px white;
+        border-radius: 20px;
+        background-color:rgb(123, 160, 123);
+        color: black;}
+    .show li {
+        display:block;
+    }
+    #menu.show::before {
+        content: "X";
+    }
+    #river {
+        border: solid 5px;
+        border-radius: 20px; 
+        border-color: white;
+    }
+    ul.navigation.show {
+        display: flex;
+        flex-direction: column;
+    }
+    #menu::before {
+        content: "☰";
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    button:hover { 
+        background-color: red; 
+    
+    }
+    button {
+        color: black;
+        padding: 20px;
+        margin: 10px;
+        height: auto;
+        background-color:rgb(123, 160, 123);
+        border: solid 5px white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px;
+        transition: .7s;
+    } 
+    h2, h3, h4, h5 {   
+        margin: 5px;
+        padding: 10px;
+        border: solid 5px white;
+        border-radius: 20px;
+        background-color:rgb(123, 160, 123);
+        color: black;
+    }
+    footer p {
+        color:black;
+    }
+}
