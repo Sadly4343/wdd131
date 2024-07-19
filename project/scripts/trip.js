@@ -23,14 +23,14 @@ const trips = [
       availability: "September-December",
       cost: "$150",
       imageUrl:
-      "images/river.webp"
+      "images/river1.webp"
     },
     {
       tripName: "Day Trip",
       location: "Lower Snake River",
       availability: "September-December",
       cost: "$275",
-        imageUrl: "images/river-day2.webp"
+        imageUrl: "images/river2.webp"
     },
     {
       tripName: "2 Day Trip",
@@ -38,7 +38,7 @@ const trips = [
       availability: "September-December",
       cost: "$400",
       imageUrl:
-      "images/river-day-5.webp"
+      "images/river3.webp"
     },
    
     
@@ -51,12 +51,13 @@ function createTripsCard(trips){
   document.querySelector(".container").innerHTML = "";
   trips.forEach(trip => {
     let card = document.createElement("section");
-    let name = document.createElement("h3")
+    ;
+    let name = document.createElement("h2")
     let location = document.createElement("p");
     let availability = document.createElement("p");
     let cost = document.createElement("button");
     let img = document.createElement("img");
-
+    
     name.textContent = trip.tripName;
     location.innerHTML = `<span class="label">Location:</span> ${trip.location}`;
     availability.innerHTML = `<span class="label">Availability:</span> ${trip.availability}`;
@@ -80,6 +81,5 @@ function createTripsCard(trips){
 function sendMe(){
   window.location.href = "contact.html";
     };
-
 
 
