@@ -52,8 +52,10 @@ form.form {
 }
 
 img {
-    height: 700px;
+    height: 725px;
     width: auto;
+    border: 1px solid rgba(127, 121, 121, 0.3);
+    box-shadow:0px 4px 8px 0 blue;
 }
 
 .work {
@@ -95,10 +97,12 @@ form.form {
     padding: 40px; 
     background-color:  rgb(123, 160, 123);/* Increase padding for a larger visual area */
     margin: 40px auto;
+    border: 3px solid rgba(127, 121, 121, 0.3);
+    box-shadow:0px 9px 8px 0 blue;
     
 }
 #submit {
-    background-color: rgb(123, 160, 123); color: black;
+    background-color: rgb(123, 160, 123); color: black;box-shadow:0px 9px 8px 0 blue; border-radius: 20px;
 }
 #menu {
     font-size: small;
@@ -122,11 +126,6 @@ h1 {text-align: center; font-size: 3rem; font-weight: bold;}
     font-size: 2rem; font-weight: bold;
 }
 
-header {
-    border: solid 5px;
-    text-align: center;
-    margin-bottom: 20px;
-}
 ul.navigation.show {
     margin: 0;
     padding: 0;
@@ -138,6 +137,8 @@ ul.navigation.show {
     text-decoration: none;
     color: white;
     font-weight: 700;
+    border: 1px solid rgba(127, 121, 121, 0.3);
+    box-shadow:0px 4px 8px 0 blue;
 }
 header {border: solid 5px; background-color:rgb(123, 160, 123) }
 nav {
@@ -150,6 +151,8 @@ nav {
 .navigation {
     list-style: none;
     margin: 0 auto;
+    width: 100%;
+    
  
 }
 
@@ -157,6 +160,14 @@ header {
     border: solid 5px;
     text-align: center;
     margin-bottom: 20px;
+    width: 100%
+}
+.header-container {
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation a {
@@ -188,10 +199,16 @@ ul.navigation.show {
 section p {
     font-size: 1.5rem; font-weight: bolder;
 }
-
+h2, h3, h4, h5 {   border: 3px solid rgba(127, 121, 121, 0.3);
+    box-shadow:0px 9px 8px 0 blue; border-radius: 20px;margin-bottom: 10px;
+border: 3px solid rgba(127, 121, 121, 0.3);}
 @media screen and (max-width: 650px) {
     ul.navigation {flex-direction: column; padding: 0;} 
-    header {background-color:rgb(197, 166, 166);padding: 5px; font-size: 1.2rem;}
+    header {
+        background-color: rgb(197, 166, 166);
+        padding: 5px; 
+        font-size: 1.2rem;
+    }
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -199,44 +216,46 @@ section p {
         max-width: 100%;
         margin: 0;
         height: auto;
-        justify-content:center;
-        
+        justify-content: center;
+        width: 100%;
+        height: auto;
     } 
     .navigation li {display: none;}
     img {
         height: auto;
         width: 100%;
         border-radius: 20px;
-
     }
-    input {width: 90%;}
-    #submit {width: 100%;}
+    input, #submit {
+        width: 90%; /* Ensure form elements do not overflow */
+    }
     form.form {
         border: solid 5px white;
         border-radius: 20px;
-        background-color:rgb(123, 160, 123);
+        background-color: rgb(123, 160, 123);
         padding: 20px;
-      
-        width: auto;
-
-        
+        width: 100%; /* Adjusted to ensure form does not overflow */
     }
-
-    section {border-bottom: 1px solid grey;  background-color:rgb(197, 166, 166);
+    section {
+        border-bottom: 1px solid grey;
+        background-color: rgb(197, 166, 166);
         border: solid 2px white;
         border-radius: 20px;
-        height: auto;}  
-    section p {
-        font-size: 1.5rem; font-weight: bolder;
-    }
-    h2,h3 {margin: 5px;
+        height: auto;
+    } 
+    section p, h2, h3  {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin: 5px;
         padding: 10px;
         border: solid 5px white;
         border-radius: 20px;
-        background-color:rgb(123, 160, 123);
-        color: black;}
+        background-color: rgb(123, 160, 123);
+        color: black;
+    }
     .show li {
-        display:block;
+        display: block; /* Ensure hidden items are now visible if needed */
+    
     }
     #menu.show::before {
         content: "X";
@@ -257,21 +276,7 @@ section p {
         display: grid;
         grid-template-columns: 1fr;
     }
-    button:hover { 
-        background-color: red; 
     
-    }
-    button {
-        color: black;
-        padding: 20px;
-        margin: 10px;
-        height: auto;
-        background-color:rgb(123, 160, 123);
-        border: solid 5px white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px 0px;
-        transition: .7s;
-    } 
     h2, h3, h4 {   
         margin: 5px;
         padding: 10px;

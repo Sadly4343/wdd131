@@ -17,12 +17,11 @@
         padding: 20px;
         margin: 10px;
         transition: .7s;
-        background-color: green;
-        border: solid 5px white;
         border-radius: 10px;
-        box-shadow: 0px 0px 20px 0px;
         font-weight: bold;
         font-size: x-large;
+        border: 1px solid rgba(127, 121, 121, 0.3);
+        box-shadow:0px 4px 8px 0 blue;
     }
     h1 {text-align: center; font-size: 3rem; font-weight: bold;}
     p {
@@ -49,6 +48,8 @@
         border-radius: 20px;
         width: 25%;
         font-weight: bold;
+        border: 3px solid rgba(127, 121, 121, 0.3);
+        box-shadow:0px 9px 8px 0 blue;
     }
     button:hover {
         background-color: red;
@@ -80,6 +81,8 @@
         border-color: black;
         border-radius: 20px;
         border-color: white;
+        border: 3px solid rgba(127, 121, 121, 0.3);
+        box-shadow:0px 9px 8px 0 blue;
     }
     #river {
         position: absolute;
@@ -90,6 +93,8 @@
         border: solid;
         margin: 0px;
         z-index: 1;
+        border: 1px solid rgba(127, 121, 121, 0.3);
+        box-shadow:0px 4px 8px 0 blue;
     }
     .navigation li {
         display: flex;
@@ -97,6 +102,8 @@
     }
     .navigation a {
         text-align: center;
+        border: 1px solid rgba(127, 121, 121, 0.3);
+    box-shadow:0px 4px 8px 0 blue;
     }
     section#card_2 {
         position: absolute;
@@ -109,10 +116,14 @@
         height: auto;
         width: 50%;
         z-index: 2;
+        border: 3px solid rgba(127, 121, 121, 0.3);
+        box-shadow:0px 9px 8px 0 blue;
     }
     h3 {
         background-color:rgb(123, 160, 123);
         color: black;
+        border: 3px solid rgba(127, 121, 121, 0.3);
+        box-shadow:0px 9px 8px 0 blue;
     }
     footer {
         height: auto;
