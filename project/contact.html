@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +9,75 @@
     <script src="scripts/contact.js" defer></script>
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <title>Contact Page Backwater Fishing Guides</title>
-    
+
 
 </head>
+
 <body>
+    <div class="parent">
+        <p>Immediate child 1</p>
+        <p>Immediate child 2</p>
+        <div>
+            <p>Nested child</p>
+        </div>
+    </div>
+
     <main>
-    <header>
-        <h1>Backwater Fishing Guides</h1>
+        <header>
+            <h1>Backwater Fishing Guides</h1>
             <nav>
                 <a id="menu" href="#"></a>
                 <ul class="navigation">
                     <li><a href="index.html">Home
-                    </a></li>
+                        </a></li>
                     <li><a href="trip.html">Trips
-                    </a></li>
+                        </a></li>
                     <li><a href="contact.html">Contact Us
-                    </a></li>
+                        </a></li>
                 </ul>
             </nav>
         </header>
         <div class="container">
-        <section class="work">
-        <h2>Work Testimonial</h2>
-        <p>I have been working for Backwater Fishing Guides for over 20 years and can promise we will always guide you to the fish that will leave an unforgettable experience for any angler!</p>
-        <img src="images/guide.webp" alt="Backwater Fishing Guide">
-        </section>
+            <section class="work">
+                <h2>Work Testimonial</h2>
+                <p>I have been working for Backwater Fishing Guides for over 20 years and can promise we will always
+                    guide you to the fish that will leave an unforgettable experience for any angler!</p>
+                <img src="images/guide.webp" alt="Backwater Fishing Guide">
+            </section>
             <section>
-            <h3>Choose Fishing Trip Signup!</h3>
-            <form onsubmit="save_data()" action="review.html" method="get" class="form" autocomplete="on">
-                <label for="name">Name*</label>
-                <div class="username">
-                    <input type="text" id="name" name="name" required autocomplete="on">
-                </div>
-                <label for="email">Email Address*</label>
-                <div class="email">
-                <input type="email" id="email" name="email" required autocomplete="on">
-                </div>
-                <label for="phone_number">Phone Number*</label>
-                <div class="phone_number">
-                    <input type="tel" id="phone_number" name="phone_number" required>
-                </div>
+                <h3>Choose Fishing Trip Signup!</h3>
+                <form onsubmit="save_data()" action="review.html" method="get" class="form" autocomplete="on">
+                    <label for="name">Name*</label>
+                    <div class="username">
+                        <input type="text" id="name" name="name" required autocomplete="on">
+                    </div>
+                    <label for="email">Email Address*</label>
+                    <div class="email">
+                        <input type="email" id="email" name="email" required autocomplete="on">
+                    </div>
+                    <label for="phone_number">Phone Number*</label>
+                    <div class="phone_number">
+                        <input type="tel" id="phone_number" name="phone_number" required>
+                    </div>
                     <label for="select-trip">Trip Selection*</label>
                     <div class="select">
-                        
-                
-                    <select name="select-trip" id="select-trip"
-                        required>
-                        <option value="" disabled selected>Available Trips</option>
-                    </select>
+
+
+                        <select name="select-trip" id="select-trip" required>
+                            <option value="" disabled selected>Available Trips</option>
+                        </select>
                     </div>
                     <label for="trip_date">Date of Trip*</label>
                     <div class="trip_date">
                         <input type="date" id="trip_date" name="trip_date" value="" required>
-                        
+
                     </div>
                     <div class="complete-review">
                         <input type="submit" id="submit" value="Complete Trip Signup!">
                     </div>
-        
-        
-            </form>
+
+
+                </form>
             </section>
             <section>
                 <h4>Contact Us!</h4>
@@ -77,24 +87,28 @@
                     Email: Loganhartshorn@gmail.com <br>
                 </p>
                 <h5>Backwater Guide Location</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1185.677316927254!2d-116.8468856288146!3d45.024279874043835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6a390d3de05e5%3A0x105ba51021f82762!2sSnake%20River!5e0!3m2!1sen!2sus!4v1721358585792!5m2!1sen!2sus" width="600" height="450" style="border:0;" title="Backwater Guide Location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1185.677316927254!2d-116.8468856288146!3d45.024279874043835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6a390d3de05e5%3A0x105ba51021f82762!2sSnake%20River!5e0!3m2!1sen!2sus!4v1721358585792!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" title="Backwater Guide Location" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <section>
-            <h5>Best Backwater Fisherman!</h5>
-            <img src="images/backwater.webp" alt="backwater fisherman holding fish" loading="lazy">
+                <h5>Best Backwater Fisherman!</h5>
+                <img src="images/backwater.webp" alt="backwater fisherman holding fish" loading="lazy">
             </section>
         </div>
         <footer>
             <p>
-            <span id="currentyear"></span>
-            Logan Hartshorn
-            Washington State<br>
-            Last Modified
+                <span id="currentyear"></span>
+                Logan Hartshorn
+                Washington State<br>
+                Last Modified
             </p>
             <p id="lastModified"> Last Modified
             </p>
-        
+
         </footer>
     </main>
 </body>
+
 </html>

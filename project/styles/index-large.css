@@ -2,16 +2,24 @@
     .navigation {
         display: flex;
         justify-content: space-around;
-        font-size: 2rem; font-weight: bold;
+        font-size: 2rem;
+        font-weight: bold;
     }
+
     .container {
         position: relative;
         width: 100%;
         min-height: 500px;
     }
+
     button:hover {
         background-color: red;
     }
+
+    span {
+        font-size: 20rem;
+    }
+
     button {
         color: white;
         padding: 20px;
@@ -21,24 +29,34 @@
         font-weight: bold;
         font-size: x-large;
         border: 1px solid rgba(127, 121, 121, 0.3);
-        box-shadow:0px 4px 8px 0 blue;
+        box-shadow: 0px 4px 8px 0 blue;
     }
-    h1 {text-align: center; font-size: 3rem; font-weight: bold;}
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
     p {
         padding: 10px;
         color: white;
         letter-spacing: 5px;
     }
+
     .navigation li {
         display: flex;
         justify-content: space-around;
     }
+
     .navigation a {
         text-align: center;
     }
+
     .container {
         position: relative;
     }
+
     section#card_1 {
         position: absolute;
         top: 62px;
@@ -49,12 +67,14 @@
         width: 25%;
         font-weight: bold;
         border: 3px solid rgba(127, 121, 121, 0.3);
-        box-shadow:0px 9px 8px 0 blue;
+        box-shadow: 0px 9px 8px 0 blue;
     }
+
     button:hover {
         background-color: red;
         transition: .7s;
     }
+
     button {
         color: black;
         padding: 20px;
@@ -66,6 +86,7 @@
         box-shadow: 0px 0px 20px 0px;
         border-color: white;
     }
+
     p {
         padding: 10px;
         color: black;
@@ -73,6 +94,7 @@
         font-size: larger;
         font-weight: bold;
     }
+
     h2,
     h3 {
         margin: 5px;
@@ -82,8 +104,9 @@
         border-radius: 20px;
         border-color: white;
         border: 3px solid rgba(127, 121, 121, 0.3);
-        box-shadow:0px 9px 8px 0 blue;
+        box-shadow: 0px 9px 8px 0 blue;
     }
+
     #river {
         position: absolute;
         top: 62px;
@@ -94,17 +117,20 @@
         margin: 0px;
         z-index: 1;
         border: 1px solid rgba(127, 121, 121, 0.3);
-        box-shadow:0px 4px 8px 0 blue;
+        box-shadow: 0px 4px 8px 0 blue;
     }
+
     .navigation li {
         display: flex;
         justify-content: space-around;
     }
+
     .navigation a {
         text-align: center;
         border: 1px solid rgba(127, 121, 121, 0.3);
-    box-shadow:0px 4px 8px 0 blue;
+        box-shadow: 0px 4px 8px 0 blue;
     }
+
     section#card_2 {
         position: absolute;
         bottom: 8px;
@@ -117,18 +143,21 @@
         width: 50%;
         z-index: 2;
         border: 3px solid rgba(127, 121, 121, 0.3);
-        box-shadow:0px 9px 8px 0 blue;
+        box-shadow: 0px 9px 8px 0 blue;
     }
+
     h3 {
-        background-color:rgb(123, 160, 123);
+        background-color: rgb(123, 160, 123);
         color: black;
         border: 3px solid rgba(127, 121, 121, 0.3);
-        box-shadow:0px 9px 8px 0 blue;
+        box-shadow: 0px 9px 8px 0 blue;
     }
+
     footer {
         height: auto;
         width: 100%;
     }
+
     footer p {
         margin: 0px;
     }

@@ -17,8 +17,12 @@ p {
     font-weight: bolder;
 }
 
-h1, h2, h3, h4, h5 {
-    background-color: rgb(123, 160, 123); 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    background-color: rgb(123, 160, 123);
     color: black;
     margin: 0;
     font-size: 2em;
@@ -37,14 +41,24 @@ nav ul {
     line-height: 2;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     font-size: x-large;
     padding: 12px;
     margin: 8px 0;
     width: 100%;
 }
-form.form label {font-size: 1.4rem;
-display: block; font-weight: bolder;}
+
+form.form label {
+    font-size: 1.4rem;
+    display: block;
+    font-weight: bolder;
+}
+
+.parent > p{
+    color: red;
+}
 
 form.form {
     text-align: left;
@@ -55,7 +69,7 @@ img {
     height: 725px;
     width: auto;
     border: 1px solid rgba(127, 121, 121, 0.3);
-    box-shadow:0px 4px 8px 0 blue;
+    box-shadow: 0px 4px 8px 0 blue;
 }
 
 .work {
@@ -84,26 +98,35 @@ input#submit nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 100vw;
- 
+
 }
 
 form.form {
     border: solid;
     border-radius: 20px;
     border-color: white;
-    height: auto; /* Ensures the height adjusts based on content */
-    width: 100%; /* Use the full width of its container */
-    max-width: 800px; /* Increase max-width for a larger form */
-    padding: 40px; 
-    background-color:  rgb(123, 160, 123);/* Increase padding for a larger visual area */
+    height: auto;
+    /* Ensures the height adjusts based on content */
+    width: 100%;
+    /* Use the full width of its container */
+    max-width: 800px;
+    /* Increase max-width for a larger form */
+    padding: 40px;
+    background-color: rgb(123, 160, 123);
+    /* Increase padding for a larger visual area */
     margin: 40px auto;
     border: 3px solid rgba(127, 121, 121, 0.3);
-    box-shadow:0px 9px 8px 0 blue;
-    
+    box-shadow: 0px 9px 8px 0 blue;
+
 }
+
 #submit {
-    background-color: rgb(123, 160, 123); color: black;box-shadow:0px 9px 8px 0 blue; border-radius: 20px;
+    background-color: rgb(123, 160, 123);
+    color: black;
+    box-shadow: 0px 9px 8px 0 blue;
+    border-radius: 20px;
 }
+
 #menu {
     font-size: small;
     font-weight: 700;
@@ -111,19 +134,27 @@ form.form {
     padding: .5rem .75rem;
     color: black;
 }
+
 #submit:hover {
-    background-color: rgb(220, 190, 190); 
-    cursor: pointer; 
-    
+    background-color: rgb(220, 190, 190);
+    cursor: pointer;
+
 }
-h1 {text-align: center; font-size: 3rem; font-weight: bold;}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .navigation {
     list-style: none;
     margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: space-around;
-    font-size: 2rem; font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 ul.navigation.show {
@@ -131,6 +162,7 @@ ul.navigation.show {
     padding: 0;
     justify-content: space-between;
 }
+
 .navigation a {
     display: block;
     padding: .75rem;
@@ -138,11 +170,16 @@ ul.navigation.show {
     color: white;
     font-weight: 700;
     border: 1px solid rgba(127, 121, 121, 0.3);
-    box-shadow:0px 4px 8px 0 blue;
+    box-shadow: 0px 4px 8px 0 blue;
 }
-header {border: solid 5px; background-color:rgb(123, 160, 123) }
+
+header {
+    border: solid 5px;
+    background-color: rgb(123, 160, 123)
+}
+
 nav {
-    background-color: rgb(123, 160, 123) ;
+    background-color: rgb(123, 160, 123);
 }
 
 
@@ -152,8 +189,8 @@ nav {
     list-style: none;
     margin: 0 auto;
     width: 100%;
-    
- 
+
+
 }
 
 header {
@@ -162,9 +199,12 @@ header {
     margin-bottom: 20px;
     width: 100%
 }
+
 .header-container {
-    max-width: 1200px; /* Adjust based on your design */
-    margin: 0 auto; /* Center the container */
+    max-width: 1200px;
+    /* Adjust based on your design */
+    margin: 0 auto;
+    /* Center the container */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,12 +214,14 @@ header {
     display: block;
     padding: .75rem;
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: 700;
     border: solid;
-    margin-bottom: 5px;}
+    margin-bottom: 5px;
+}
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover,
+.navigation a:active {
     color: white;
     background-color: black;
 }
@@ -196,19 +238,35 @@ ul.navigation.show {
     display: flex;
     flex-direction: column;
 }
+
 section p {
-    font-size: 1.5rem; font-weight: bolder;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
-h2, h3, h4, h5 {   border: 3px solid rgba(127, 121, 121, 0.3);
-    box-shadow:0px 9px 8px 0 blue; border-radius: 20px;margin-bottom: 10px;
-border: 3px solid rgba(127, 121, 121, 0.3);}
+
+h2,
+h3,
+h4,
+h5 {
+    border: 3px solid rgba(127, 121, 121, 0.3);
+    box-shadow: 0px 9px 8px 0 blue;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 3px solid rgba(127, 121, 121, 0.3);
+}
+
 @media screen and (max-width: 650px) {
-    ul.navigation {flex-direction: column; padding: 0;} 
+    ul.navigation {
+        flex-direction: column;
+        padding: 0;
+    }
+
     header {
         background-color: rgb(197, 166, 166);
-        padding: 5px; 
+        padding: 5px;
         font-size: 1.2rem;
     }
+
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -219,31 +277,44 @@ border: 3px solid rgba(127, 121, 121, 0.3);}
         justify-content: center;
         width: 100%;
         height: auto;
-    } 
-    .navigation li {display: none;}
+    }
+
+    .navigation li {
+        display: none;
+    }
+
     img {
         height: auto;
         width: 100%;
         border-radius: 20px;
     }
-    input, #submit {
-        width: 90%; /* Ensure form elements do not overflow */
+
+    input,
+    #submit {
+        width: 90%;
+        /* Ensure form elements do not overflow */
     }
+
     form.form {
         border: solid 5px white;
         border-radius: 20px;
         background-color: rgb(123, 160, 123);
         padding: 20px;
-        width: 100%; /* Adjusted to ensure form does not overflow */
+        width: 100%;
+        /* Adjusted to ensure form does not overflow */
     }
+
     section {
         border-bottom: 1px solid grey;
         background-color: rgb(197, 166, 166);
         border: solid 2px white;
         border-radius: 20px;
         height: auto;
-    } 
-    section p, h2, h3  {
+    }
+
+    section p,
+    h2,
+    h3 {
         font-size: 1.5rem;
         font-weight: bolder;
         margin: 5px;
@@ -253,40 +324,50 @@ border: 3px solid rgba(127, 121, 121, 0.3);}
         background-color: rgb(123, 160, 123);
         color: black;
     }
+
     .show li {
-        display: block; /* Ensure hidden items are now visible if needed */
-    
+        display: block;
+        /* Ensure hidden items are now visible if needed */
+
     }
+
     #menu.show::before {
         content: "X";
     }
+
     #river {
         border: solid 5px;
-        border-radius: 20px; 
+        border-radius: 20px;
         border-color: white;
     }
+
     ul.navigation.show {
         display: flex;
         flex-direction: column;
     }
+
     #menu::before {
         content: "☰";
     }
+
     .container {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
-    h2, h3, h4 {   
+
+    h2,
+    h3,
+    h4 {
         margin: 5px;
         padding: 10px;
         border: solid 5px white;
         border-radius: 20px;
-        background-color:rgb(123, 160, 123);
+        background-color: rgb(123, 160, 123);
         color: black;
     }
+
     footer p {
-        color:black;
+        color: black;
     }
 
 }
